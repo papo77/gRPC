@@ -1,0 +1,34 @@
+{
+  "Total" : {
+    "transaction" : "Total",
+    "sampleCount" : 774221,
+    "errorCount" : 763664,
+    "errorPct" : 98.63644,
+    "meanResTime" : 13.801988062839708,
+    "medianResTime" : 8.0,
+    "minResTime" : 0.0,
+    "maxResTime" : 3939.0,
+    "pct1ResTime" : 18.0,
+    "pct2ResTime" : 22.0,
+    "pct3ResTime" : 71.9900000000016,
+    "throughput" : 18504.768278400537,
+    "receivedKBytesPerSec" : 3717.0590406827364,
+    "sentKBytesPerSec" : 0.0
+  },
+  "MakePDF" : {
+    "transaction" : "MakePDF",
+    "sampleCount" : 774221,
+    "errorCount" : 763664,
+    "errorPct" : 98.63644,
+    "meanResTime" : 13.801988062839708,
+    "medianResTime" : 8.0,
+    "minResTime" : 0.0,
+    "maxResTime" : 3939.0,
+    "pct1ResTime" : 18.0,
+    "pct2ResTime" : 22.0,
+    "pct3ResTime" : 71.9900000000016,
+    "throughput" : 18504.768278400537,
+    "receivedKBytesPerSec" : 3717.0590406827364,
+    "sentKBytesPerSec" : 0.0
+  }
+}

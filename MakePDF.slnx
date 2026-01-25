@@ -1,3 +1,5 @@
 <Solution>
-  <Project Path="/Volumes/IronHide/dev/NET/grpc/MakePDF/MakePDF.csproj" />
+  <Project Path="/Volumes/IronHide/dev/net/grpc/makepdf/MakePDFAPI/MakePDF.csproj" />
+  <Project Path="AppHost/AppHost.csproj" />
+  <Project Path="ServiceDefaults/ServiceDefaults.csproj" />
 </Solution>
