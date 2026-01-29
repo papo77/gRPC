@@ -3,11 +3,16 @@ WORKDIR /app
 EXPOSE 5002 5555
 
 ENV ASPNETCORE_ENVIRONMENT=Docker
+ENV DOTNET_GCServer=1
+ENV DOTNET_GCConcurrent=1
+ENV DOTNET_gcAllowVeryLargeObjects=1
+
 
 # Create cert directory and set permissions
 USER root
 RUN mkdir -p /app/cert
 USER app
+
 FROM --platform=$BUILDPLATFORM mcr.microsoft.com/dotnet/sdk:10.0 AS build
 ARG configuration=Release
 WORKDIR /src

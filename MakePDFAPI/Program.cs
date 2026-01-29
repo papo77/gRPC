@@ -1,4 +1,5 @@
 using MakePDF.Services;
+using Microsoft.AspNetCore.Server.Kestrel.Core;
 
 namespace MakePDF;
 
@@ -10,7 +11,18 @@ public class Program
         builder.AddServiceDefaults();
         
         // Add services to the container.
-        builder.Services.AddGrpc();
+        builder.Services.AddGrpc(options =>
+        {
+            options.EnableDetailedErrors = true;
+        });
+
+    // Configure Kestrel for better performance
+        builder.Services.Configure<KestrelServerOptions>(options =>
+        {
+            options.Limits.MaxConcurrentConnections = 1000;
+            options.Limits.MaxConcurrentUpgradedConnections = 1000;
+            options.Limits.RequestHeadersTimeout = TimeSpan.FromSeconds(30);
+        });
 
         var app = builder.Build();        
         app.MapDefaultEndpoints();

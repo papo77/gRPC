@@ -1,6 +1,6 @@
 timestamp="$(date +"%Y-%m-%d_%H-%M-%S")"
-results_output_path="/Volumes/IronHide/dev/NET/grpc/MakePDF/jmeter/results/$timestamp"
-report_output_path="/Volumes/IronHide/dev/NET/grpc/MakePDF/jmeter/reports/$timestamp"
+results_output_path="/Volumes/IronHide/dev/NET/grpc/MakePDF/MakePDFAPI/jmeter/results/$timestamp"
+report_output_path="/Volumes/IronHide/dev/NET/grpc/MakePDF/MakePDFAPI/jmeter/reports/$timestamp"
 echo "Results being saved to:  $results_output_path"
 echo "Reports being saved to:  $report_output_path"
 mkdir -p $results_output_path
