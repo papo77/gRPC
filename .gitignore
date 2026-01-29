@@ -484,5 +484,5 @@ $RECYCLE.BIN/
 *.swp
 
 # JMeter results
-jMeter/[rR]eports
-jMeter/[rR]esults
+MakePDFAPIjMeter/[rR]eports
+MakePDFAPIjMeter/[rR]esults
